@@ -96,10 +96,10 @@ h1::before {
     text-decoration: none;
     font-weight: bold;
 }
-@midia (max-width: 480px){
+@media (max-width: 480px){
     .container{
         padding: 20px;
-        width: 90%;;
+        width: 90%;
     }
     h1{
         font-size: 24px;
