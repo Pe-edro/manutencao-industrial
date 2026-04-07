@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoodleCraft S.A.</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--div-pai-->
+    <div class="container">
+        <main class="login-area">
+            <h1>Faça seu login</h1>
+
+            <form action="/enviar dados" method="post">
+
+                <!--Campo de email-->
+                <div class="grupo-form">
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <!--campo de senha-->
+                <div class="grupo-form">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="digite sua senha.">
+                </div>
+
+                <!--lembrar de mim-->
+                <div class="opcao-form">
+                    <input type="checkbox" id="lembrar">
+                    <label for="lembrar">Lembrar de mim</label>
+                </div>
+
+                <!--operario e macanico-->
+                <div class="grupo-form">
+                    <label for="cargo">Você é?</label>
+                    <select id="cargo" required>
+                        <option value="" disabled selected>Selecione seu cargo</option>
+                        <option value="operario">Operário</option>
+                        <option value="mecanico">Mecânico</option>
+                    </select>
+                </div>
+
+                <!--botao de envio-->
+                <button class="btn-login" type="submit" onclick="redirecionar()">Entrar</button>
+            </form>
+            <!--area cadastro-->
+            <div class="signup-link">
+                <p>Não tem uma conta?<a href="cadastro.html">Cadastre-se aqui</a></p>
+            </div>
+        </main>
+    </div>
+
+    <!--scrip para redirecionar html-->
+    <script>
+        function redirecionar(){
+            const cargo = document.getElementById('cargo').value;
+
+            if(cargo === 'operario'){
+                window.location.href = "home-operario.html";
+            } else if (cargo === 'mecanico') {
+                window.location.href = "home-mecanico.html";
+            } else {
+                alert("Por favor, selecione um cargo!");
+            }
+        }
+    </script>
+</body>
+</html>
