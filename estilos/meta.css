@@ -1,0 +1,40 @@
+/* Configuração Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; 
+    background: url('../img/imagem-fundo.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f6ead9;
+    max-width: 650px;
+    width: 95%;
+    margin: 0 auto;
+    max-height: 90vh;
+    border-radius: 15px;
+}
+
+header {
+    grid-area: header;
+    background-color: #7da37c;
+    color: #d1512d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%; 
+    border-radius: 8px; 
+    gap: 20px;
+}
