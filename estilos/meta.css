@@ -28,8 +28,8 @@ body {
 
 header {
     grid-area: header;
-    background-color: #7da37c;
-    color: #d1512d;
+    background-color: #C9512E;
+    color: #454136;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,4 +37,61 @@ header {
     width: 100%; 
     border-radius: 8px; 
     gap: 20px;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a{
+    color: #454136;
+    text-decoration: none;
+    margin-left: 15px;
+}
+main {
+    grid-area: main;
+    background-color: #f6ead9;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+main h1, p{
+    color: #C9512E;
+    margin-bottom: 80px;
+   text-align: left;    
+    margin-top: 0;      
+    margin-left: 0;
+    width: 100%;
+}
+p{
+    color:black;
+    font-size: 20px;
+}
+.btn-navegacao{
+    width: 100%;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+.btn-login{
+    width: 100%;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
 }
