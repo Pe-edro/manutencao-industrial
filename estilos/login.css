@@ -11,7 +11,7 @@ body{
     margin: 0;
     display: grid;
     place-items: center;
-    background-image: url('img/imagem-fundo.png');
+    background-image: url('../img/imagem-fundo.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -42,7 +42,7 @@ h1::before {
     max-width: 300px;      
     height: 120px;        
     margin: 0 auto 0px;  
-    background-image: url('img/logonoodle.png');
+    background-image: url('../img/logonoodle.png');
     background-size: contain;  
     background-repeat: no-repeat;
     background-position: center;
