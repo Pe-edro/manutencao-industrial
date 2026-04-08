@@ -9,14 +9,14 @@ body{
     width: 100%;
     min-height: 100vh;
     margin: 0;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     background-image: url('imagem-fundo.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 20px;
+    padding: 20px 10px;
     box-sizing: border-box;
     overflow-x: hidden;
 }
