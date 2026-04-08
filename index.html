@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoodleCraft S.A.</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="estilos/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -50,7 +50,7 @@
             </form>
             <!--area cadastro-->
             <div class="signup-link">
-                <p>Não tem uma conta?<a href="cadastro.html">Cadastre-se aqui</a></p>
+                <p>Não tem uma conta?<a href="telas/cadastro.html">Cadastre-se aqui</a></p>
             </div>
         </main>
     </div>
@@ -61,9 +61,9 @@
             const cargo = document.getElementById('cargo').value;
 
             if(cargo === 'operario'){
-                window.location.href = "home-operario.html";
+                window.location.href = "telas/home-operario.html";
             } else if (cargo === 'mecanico') {
-                window.location.href = "home-mecanico.html";
+                window.location.href = "telas/home-mecanico.html";
             } else {
                 alert("Por favor, selecione um cargo!");
             }
