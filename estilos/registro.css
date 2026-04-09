@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Fundo */
+/* Fundo da página */
 body {
     height: 100vh;
     background: url('../img/imagem-fundo.png') no-repeat center center/cover;
@@ -29,10 +29,11 @@ header h1 {
     font-size: 22px;
 }
 
-/* Nav */
+/* Navegação */
 nav a {
     color: white;
     text-decoration: none;
+    margin-left: 20px;
     font-size: 14px;
 }
 
@@ -40,7 +41,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Centralização */
+/* Container central */
 .container {
     display: flex;
     justify-content: center;
@@ -48,10 +49,10 @@ nav a:hover {
     height: calc(100vh - 80px);
 }
 
-/* Card */
+/* Card principal */
 main {
     background-color: #e9d8c5;
-    padding: 50px 40px;
+    padding: 40px;
     border-radius: 15px;
     width: 400px;
     text-align: center;
@@ -60,30 +61,52 @@ main {
 /* Título */
 main h1 {
     color: #d3542b;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Inputs, select e textarea */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
     margin-bottom: 15px;
 }
 
-/* Texto */
-main p {
-    margin-bottom: 30px;
-    font-size: 16px;
+/* Radio buttons */
+.form-nome input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+    display: flex;
 }
 
-/* Botões estilo link */
-.btn-navegacao,
-.btn-login {
-    display: inline-block;
+.form-nome {
+    text-align: left;
+}
+
+/* Botão */
+button {
     background-color: #e67e22;
     color: white;
-    text-decoration: none;
-    padding: 12px 20px;
+    border: none;
+    padding: 12px;
+    width: 100%;
     border-radius: 10px;
-    font-size: 15px;
-    transition: 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
-/* Hover */
-.btn-navegacao:hover,
-.btn-login:hover {
+button:hover {
     background-color: #cf711f;
 }
