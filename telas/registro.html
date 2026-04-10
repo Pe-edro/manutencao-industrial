@@ -20,7 +20,7 @@
     </header>
     <div class="container">
         <main>
-            <form action="/enviar-pedido" method="post">
+            <form action="enviar.php" method="post">
                 <h1>Abrir Pedido de Manutenção</h1>
                 <div class="form-data">
                     <label for="tempo">Dia e Horario:</label>
@@ -47,9 +47,9 @@
                 </div>
                 <p>Continua operando?</p>
                 <div class="form-nome">
-                    <input type="radio" id="Sim" name="tipo" value="interno">
+                    <input type="radio" id="Sim" name="tipo" value="sim">
                     <label for="Sim">Sim</label>
-                    <input type="radio" id="Nao" name="tipo" value="externo">
+                    <input type="radio" id="Nao" name="tipo" value="nao">
                     <label for="Nao">Não</label>
                 </div>
 
@@ -57,7 +57,8 @@
                     <label for="mensagem">Descreva o problema:</label>
                     <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
                 </div>
-
+                <button type="submit" class="btn-submit">Enviar</button>
+                <button type="reset" class="btn-submit">Limpar formulario</button>
 
             </form>    
 
